@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Join MMRI | Michigan Materials Research Institute</title>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <a href="#main-content" class="skip">Skip to Main Content</a>
+    <div class="header-inner">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="logo">
+        <img src="images/materialsresearchlogo.png" class="logo-img" alt="Michigan Materials Research Institute Text Logo with block yellow M and blue background.">
+      </div>
+      <nav class="main-nav">
+        <a href="/Users/sabrenachedid/Documents/MMRI%20Website/HTML%20Code/index.html">Home</a>
+        <a href="/Users/sabrenachedid/Documents/MMRI%20Website/HTML%20Code/about.html">About</a>
+        <a href="#">Research</a>
+        <a href="#">People</a>
+        <a href="/Users/sabrenachedid/Documents/MMRI%20Website/HTML%20Code/summit.html">Annual Summit</a>
+        <a href="/Users/sabrenachedid/Documents/MMRI%20Website/HTML%20Code/news.html">News</a>
+        <a href="#" style="color:var(--maize);font-weight:700;">Join MMRI</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#" class="btn-affiliate">Become an Affiliate</a>
+        <a href="#" class="btn-login">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== MAIN ===================== -->
+  <main id="main-content" class="join-hero">
+    <div class="join-hero-right"></div>
+    <div class="join-hero-left">
+      <div class="join-hero-card">
+        <h1>JOIN THE MMRI COMMUNITY</h1>
+        <p>
+          Joining MMRI connects you to over 150 researchers across 20+ U-M departments.
+          You'll get access to incubator funding, world-class research facilities, and a
+          community built around materials science at Michigan. Check out our People page
+          to see our current affiliates.
+        </p>
+        <a href="#" class="join-btn-affiliate">Become Affiliate</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <img src="images/u-m_logo-hex.png" alt="University of Michigan">
+        <div>
+          <span class="footer-name">Michigan Materials Research Institute</span>
+          <span class="footer-copy">© <span id="footer-year"></span> Michigan Materials Research Institute</span>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#">Contact Us</a>
+        <a href="#">Join MMRI</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
