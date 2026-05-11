@@ -1166,31 +1166,28 @@ img {
    JOIN PAGE STYLES
    (new — no existing classes overridden)
    ===================== */
-
-.join-hero {
-  position: relative;
-  min-height: 560px;
-  display: flex;
-  align-items: center;
-  background: var(--white);
-}
-
-/* Image occupies the right 65% */
 .join-hero-right {
   position: absolute;
   top: 0;
   right: 0;
   width: 65%;
   height: 100%;
-  background: url('/Users/sabrenachedid/Documents/MMRI Website/HTML Code/images/michunion.jpg') center/cover no-repeat;
+  background: url('../images/michunion.jpg') center/cover no-repeat;
 }
 
-/* Card overlaps from left onto the image */
+.join-hero {
+  position: relative;
+  min-height: calc(100vh - 130px);  /* was 560px */
+  display: flex;
+  align-items: center;
+  background: var(--white);
+}
+
 .join-hero-left {
   position: relative;
   z-index: 2;
   width: 100%;
-  padding: 60px 0;
+  padding: 80px 0;  /* was 60px */
   display: flex;
   align-items: center;
 }
@@ -1201,27 +1198,19 @@ img {
   background: var(--white);
   border: 3px solid var(--maize);
   border-radius: var(--radius);
-  padding: 48px 52px;
-  width: 560px;
+  padding: 64px 60px;  /* was 48px 52px */
+  width: 600px;  /* was 560px */
   margin-left: max(40px, calc((100vw - 1100px) / 2 + 40px));
 }
 
 .join-hero-card h1 {
-  font-family: var(--font-sans);
-  font-size: 26px;
-  font-weight: 700;
-  color: var(--navy);
-  margin-bottom: 24px;
-  line-height: 1.2;
-  text-transform: uppercase;
-  letter-spacing: 0.01em;
+  font-size: 30px;  /* was 26px */
+  margin-bottom: 28px;  /* was 24px */
 }
 
 .join-hero-card p {
-  font-size: 16px;
-  color: var(--text-dark);
-  line-height: 1.75;
-  margin-bottom: 32px;
+  font-size: 17px;  /* was 16px */
+  margin-bottom: 36px;  /* was 32px */
 }
 
 .join-btn-affiliate {
